@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-dark-900 text-gray-50 font-sans;
+  }
+
+  ::selection {
+    @apply bg-pink-500 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-pink-500 to-blue-500 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-pink-600 to-blue-600;
+  }
+}
+
+@layer components {
+  .cyber-gradient {
+    @apply bg-gradient-cyber bg-[length:200%_200%] animate-gradient-move;
+  }
+
+  .glassmorphism {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl;
+  }
+
+  .neon-glow {
+    @apply shadow-neon-glow;
+  }
+
+  .neon-glow-purple {
+    @apply shadow-neon-purple;
+  }
+
+  .neon-glow-cyan {
+    @apply shadow-neon-cyan;
+  }
+
+  .neon-glow-blue {
+    @apply shadow-neon-blue;
+  }
+
+  .gradient-purple {
+    @apply bg-gradient-purple;
+  }
+
+  .gradient-cyan {
+    @apply bg-gradient-cyan;
+  }
+
+  .gradient-blue {
+    @apply bg-gradient-blue;
+  }
+}
